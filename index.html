@@ -16,42 +16,63 @@
 
 
 <body>
-
-    <header class="ms_bg_header">
-        <nav>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-md navbar-dark ms_bg_header text-uppercase">
             <div class="container-md">
-                <div class="row text-white">
-                    <div class="col-3">
-                        START BOOTSTRAP
+                <a class="navbar-brand fs-2" href="#">Start boot</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">porfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">about</a>
 
-                    </div>
-                    <div class="col-3 ms-auto">
-                        PORTFOLIO
-                        ABOUT
-                        CONTACT
-                    </div>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" aria-current="page" href="#">contact</a>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
                 </div>
             </div>
         </nav>
-
     </header>
+
+
+
 
     <main>
         <section id="jumbotron" class="ms_bg_green">
-            <div class="container text-center text-white">
-               
-                <h1>START BOOTSTRAP</h1>
-                <i class="bi bi-star-fill"></i>
-                <h3></h3>
+            <div class="container py-5 text-center text-white text-uppercase">
+                <img src="img/avatar.svg" class="img-fluid" alt="...">
+                <h1>star boostrap</h1>
+                <i class="bi bi-star-fill fs-2"></i>
+                <h4><small>graphic artist-web designer-illustrator</small> </h4>
             </div>
         </section>
 
-        <section id="porfoglio">
+        <section id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center">
-                        <h2>PORTOFOLIO</h2>
-                        <i class="bi bi-star-fill"></i>
+                    <div class="col-12 text-center text-uppercase">
+                        <h2>portofolio</h2>
+                        <i class="bi bi-star-fill fs-2 "></i>
                     </div>
                 </div>
 
@@ -77,40 +98,76 @@
                 </div>
             </div>
         </section>
+
         <section id="about" class="ms_bg_green">
             <div class="container">
-                <div class="row text-white">
-                    <div class="col-12 text-center">
-                        <h2>About</h2>
-                        <i class="bi bi-star-fill"></i>
+                <div class="row justify-content-center">
+                    <div class="col-8">
+
+                        <div class="row">
+                            <div class="col-12 text-center text-uppercase text-white">
+                                <h2>About</h2>
+                                <i class="bi bi-star-fill fs-2"></i>
+                            </div>
+                        </div>
+                        <div class="row text-white">
+                            <div class="col-12 col-sm-6">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos earum
+                                quisquam
+                                ex
+                                qui tempore, aliquam maiores quod minus impedit recusandae magnam consequuntur
+                                voluptatum,
+                                ullam
+                                rem aperiam eligendi adipisci placeat. Lorem ipsum dolor sit amet consectetur
+                                adipisicing
+                                elit.
+                            </div>
+                            <div class="col-12  col-sm-6">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ducimus suscipit
+                                deleniti,
+                                numquam architecto ut expedita inventore, hic id nobis ab provident doloremque?Lorem
+                                ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, ad sequi! Beatae,
+                                quaerat facere aliquid sapiente quia expedita velit eaque alias ipsum fugiat maxime
+                                voluptate, magni libero repudiandae explicabo assumenda?
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row text-white">
-                    <div class="col-12 col-sm-6">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dignissimos earum quisquam ex
-                        qui tempore, aliquam maiores quod minus impedit recusandae magnam consequuntur voluptatum, ullam
-                        rem aperiam eligendi adipisci placeat.
-                    </div>
-                    <div class="col-12 col-sm-6">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ducimus suscipit deleniti,
-                        numquam architecto ut expedita inventore, hic id nobis ab provident doloremque? Alias maiores
-                        dolorem et perferendis consectetur suscipit!
+                <div class="row py-5">
+                    <div class="col-12 text-center ">
+                        <button type="button" class="btn btn-outline-dark text-white ms_bg_green"> <i
+                                class="bi bi-download"></i> dowload</button>
                     </div>
                 </div>
 
             </div>
+
+            </div>
         </section>
+
         <section id="contact">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-12">
+                <div class="row">
+                    <div class="col-12  text-center">
                         <h2> Contact Me</h2>
                         <div class="col-12">
                             <i class="bi bi-star-fill"></i>
                         </div>
+
                         <div class="col-12">
-                            
+                            <div class="mb-3">
+                                <input placeholder="Username" class="form-control">
+
+                                <input type="email" placeholder="Username" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" placeholder="Username" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" placeholder="Username" class="form-control"
+                                    id="exampleFormControlInput1" placeholder="name@example.com">
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -125,6 +182,7 @@
                     <div class="col-12 col-lg-4">
                         Location
                     </div>
+
                     <div class="col-12 col-lg-4">
                         Around the web
                     </div>
@@ -132,14 +190,43 @@
                         About Freelencer
                     </div>
                 </div>
+
+                <div class="row text-center text-white">
+                    <div class="col-12 col-lg-4">
+                       2215 john daniel drive clarck
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                        
+                    </div>
+                    <div class="col-12 col-lg-4">
+                      Frellance is a free to use open source
+                    </div>
+                </div>
+
+                <div class="row text-center text-white">
+                    <div class="col-12 col-lg-4">
+                        54324
+                    </div>
+
+                    <div class="col-12 col-lg-4">
+                       
+                    </div>
+                    <div class="col-12 col-lg-4">
+                        bootstrap theme created by start
+                    </div>
+                </div>
             </div>
+
         </div>
+
+
 
         <div class="ms_footer_bottom">
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12">
-                        Copyright 
+                        Copyright
                     </div>
                 </div>
             </div>
